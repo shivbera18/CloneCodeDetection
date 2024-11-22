@@ -1,0 +1,6 @@
+torch
+torchvision
+datasets
+keras
+scikit-learn
+tqdm
