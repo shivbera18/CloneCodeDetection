@@ -60,7 +60,7 @@ pip install -r requirements.txt
 ### Verify Installation
 ```bash
 python -c "import torch; print(f'PyTorch: {torch.__version__}')"
-python -c "import transformers; print(f'Transformers: {transformers.__version__}')"
+python -c "import transformpush to git and also push ers; print(f'Transformers: {transformers.__version__}')"
 python -c "print(f'CUDA Available: {torch.cuda.is_available()}')"
 ```
 
@@ -197,18 +197,44 @@ print(f"Prediction: {'Similar' if similarity >= 0.5 else 'Dissimilar'}")
 
 ```
 CloneCodeDetection/
-├── dataset.py              # Enhanced data loading and augmentation
-├── models.py               # Advanced Siamese network architecture
-├── train.py                # Training with validation and early stopping
-├── evaluate.py             # Comprehensive evaluation and analysis
-├── CloneCodeDetection_Complete.ipynb  # Interactive notebook
-├── requirements.txt        # Python dependencies
-├── README.md              # Project documentation
-├── model_config.json      # Model configuration
-└── evaluation_plots/      # Generated visualizations
-    ├── confusion_matrix.png
-    ├── roc_curve.png
-    └── precision_recall_curve.png
+├── .git/                           # Git repository metadata
+├── .gitattributes                  # Git LFS configuration for large files
+├── .ipynb_checkpoints/             # Jupyter notebook checkpoints
+├── CloneCodeDetection_Complete.ipynb  # Complete interactive notebook
+├── dataset.py                      # Enhanced data loading and augmentation
+├── evaluate.py                     # Comprehensive evaluation and analysis
+├── models.py                       # Advanced Siamese network architecture
+├── train.py                        # Training with validation and early stopping
+├── model_config.json               # Initial model configuration
+├── model_config_final.json         # Final trained model configuration
+├── README.md                       # Project documentation
+├── requirements.txt                # Python dependencies
+└── siamese_epoch_1_f1_0.9653.pth   # Trained model (Git LFS tracked, ~178MB)
+```
+
+### Core Components
+
+#### Python Modules
+- **dataset.py**: Enhanced BigCloneBench data loading with advanced tokenization
+- **models.py**: Improved Siamese network with 3-layer BiLSTM architecture
+- **train.py**: Advanced training with validation, early stopping, and checkpointing
+- **evaluate.py**: Comprehensive evaluation with ROC curves and detailed analysis
+
+#### Configuration Files
+- **model_config.json**: Initial model hyperparameters and settings
+- **model_config_final.json**: Final trained model configuration with performance metrics
+- **.gitattributes**: Git LFS configuration for tracking large model files
+
+#### Generated Files
+- **siamese_epoch_1_f1_0.9653.pth**: Best trained model checkpoint (178MB, Git LFS tracked)
+- **CloneCodeDetection_Complete.ipynb**: Complete interactive notebook with all experiments
+
+### Optional Generated Content (if evaluation is run)
+```
+evaluation_plots/              # Generated during evaluation
+├── confusion_matrix.png       # Classification performance visualization
+├── roc_curve.png             # ROC curve analysis
+└── precision_recall_curve.png # Precision-recall analysis
 ```
 
 ## Performance Metrics
@@ -221,8 +247,8 @@ CloneCodeDetection/
 - **ROC AUC**: 0.98+
 
 ### Performance Improvements Over Baseline
-- **Vocabulary Size**: 44 → 50,265 tokens (1,142x increase)
-- **Model Parameters**: 300K → 15.5M (52x increase)
+- **Vocabulary Size**: 50,265 tokens 
+- **Model Parameters**: 15.5M 
 - **F1 Score Reliability**: Fixed data leakage issues
 - **Generalization**: Advanced augmentation techniques
 
