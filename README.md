@@ -197,9 +197,6 @@ print(f"Prediction: {'Similar' if similarity >= 0.5 else 'Dissimilar'}")
 
 ```
 CloneCodeDetection/
-├── .git/                           # Git repository metadata
-├── .gitattributes                  # Git LFS configuration for large files
-├── .ipynb_checkpoints/             # Jupyter notebook checkpoints
 ├── CloneCodeDetection_Complete.ipynb  # Complete interactive notebook
 ├── dataset.py                      # Enhanced data loading and augmentation
 ├── evaluate.py                     # Comprehensive evaluation and analysis
