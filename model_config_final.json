@@ -1,0 +1,9 @@
+{
+  "vocab_size": 45,
+  "embed_size": 256,
+  "hidden_size": 256,
+  "max_seq_length": 512,
+  "model_type": "ImprovedSiameseNetwork",
+  "dataset": "BigCloneBench",
+  "tokenizer": "SimpleTokenizerWrapper"
+}

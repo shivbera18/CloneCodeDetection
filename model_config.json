@@ -1,0 +1,8 @@
+{
+  "vocab_size": 45,
+  "embed_size": 256,
+  "hidden_size": 256,
+  "threshold": 0.5,
+  "max_seq_length": 100,
+  "num_words": 5000
+}
