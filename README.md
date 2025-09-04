@@ -338,7 +338,7 @@ If you use this code in your research, please cite:
 ```bibtex
 @misc{enhanced_siamese_clone_detection,
   title={Enhanced Siamese Networks for Code Clone Detection},
-  author={Your Name},
+  author={Shivratan},
   year={2025},
   url={https://github.com/shivbera18/CloneCodeDetection}
 }
