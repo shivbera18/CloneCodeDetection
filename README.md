@@ -359,7 +359,7 @@ This project is licensed under the MIT License. See LICENSE file for details.
 
 For questions, issues, or collaboration opportunities:
 - GitHub Issues: [https://github.com/shivbera18/CloneCodeDetection/issues](https://github.com/shivbera18/CloneCodeDetection/issues)
-- Email: [Contact through GitHub profile]
+- Email: shivbera45@gmail.com
 
 ---
 
