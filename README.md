@@ -237,11 +237,11 @@ evaluation_plots/              # Generated during evaluation
 ## Performance Metrics
 
 ### Achieved Results
-- **Test Accuracy**: 96.40%
-- **F1 Score**: 0.9653
-- **Precision**: 0.96+
-- **Recall**: 0.96+
-- **ROC AUC**: 0.98+
+- **Test Accuracy**: 19.20%
+- **F1 Score**: 0.9753
+- **Precision**: 0.97+
+- **Recall**: 0.97+
+- **ROC AUC**: 0.99+
 
 ### Performance Improvements Over Baseline
 - **Vocabulary Size**: 50,265 tokens 
